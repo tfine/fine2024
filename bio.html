@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio - FINE 2024 Campaign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+        body {
+            background-color: #007BFF; /* Changing background to blue */
+            color: white; /* Keeping text color white for contrast */
+            font-family: 'Times New Roman', serif;
+        }
+
+        .impact {
+            font-family: 'Impact', sans-serif;
+        }
+
+        .header-link {
+            color: red; /* Adjusting header link color for better visibility on blue */
+        }
+
+        .retro-divider {
+            height: 2px;
+            background-color: gray; /* May need adjustment if visibility is an issue */
+            margin: 20px 0;
+        }
+
+        .centered-container {
+            max-width: 640px;
+            margin: auto;
+            text-align: center;
+            padding: 16px;
+            border: 1px solid gray; /* Border color might need to be changed for visibility */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Shadow for aesthetic contrast */
+            padding-top: 70px; /* Ensuring content is not hidden behind the nav */
+        }
+
+          nav {
+            width: 100%; /* Full width */
+            position: fixed; /* Fixed position */
+            top: 0; /* Align to the top */
+            left: 0; /* Align to the left */
+            background: black; /* Match the body background color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .big-title 
+            {
+                          font-size: 96px; /* Big title size */
+
+      }
+        .small-title {
+            font-size: 70px; /* Small title size, making them italic for style */
+            font-style: italic;
+        }
+           /* Targeting links that have not been visited */
+a:link {
+    color: red; /* Sets unvisited links to white */
+}
+
+/* Targeting links that have been visited */
+a:visited {
+    color: grey; /* Sets visited links to grey */
+}
+    </style>
+</head>
+<body>
+    
+    <div class="centered-container">
+         <nav>
+                <ul class="flex justify-center space-x-5">
+                  <il><a href="/" class="text-xl impact header-link">Home</a></il>
+                  <il><a href="/issues.html" class="text-xl impact header-link">Issues</a></il>
+                  <il><a href="/bio.html" class="text-xl impact header-link">Bio</a></il>
+                  <il><a href="/#strategy" class="text-xl impact header-link">Strategy</a></il>
+                  <il><a href="/#team" class="text-xl impact header-link">Team</a></il>
+                  <il><a href="/#donate" class="text-xl impact header-link">Donate</a></il>
+                </ul>
+            </nav>
+        <header class="py-4">
+            <h1 class="big-title impact header-link">FINE 2024</h1>
+            <h1 class="small-title impact header-link">candidate bio</h1>
+        </header>
+        <div class="retro-divider"></div>
+        <main> 
+          <h1>
+          who is todd fine? 
+          </h1>
+          <p>
+          Todd Fine is...
+          </p>
+          <h2>Childhood</h2>
+          <h2>High School Debate</h2>
+          <h2>Harvard University</h2>
+          <h2>Washington, D.C. and Project Khalid</h2>
+          <h2>New York City Activism</h2>
+          <h2>Activist against Fascism in Silicon Valley</h2>
+          <h2>Crypto and the 2024 Election</h2>
+        </main>
+        <footer class="py-4">
+            <p>&copy; FINE 2024 Campaign. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

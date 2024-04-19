@@ -1,106 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FINE 2024 Campaign</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap");
 
-    
-        body {
-            background-color: black; /* Setting background to black */
-            color: white; /* Default text color set to white for contrast */
-            font-family: 'Times New Roman', serif;
-        }
+      body {
+        background-color: black; /* Setting background to black */
+        color: white; /* Default text color set to white for contrast */
+        font-family: "Times New Roman", serif;
+      }
 
-        .impact {
-            font-family: 'Impact', sans-serif;
-        }
+      .impact {
+        font-family: "Impact", sans-serif;
+      }
 
-        .header-link {
-            color: red; /* Red text for headers */
-        }
+      .header-link {
+        color: red; /* Red text for headers */
+      }
 
-        .retro-divider {
-            height: 2px;
-            background-color: gray;
-            margin: 20px 0;
-        }
+      .retro-divider {
+        height: 2px;
+        background-color: gray;
+        margin: 20px 0;
+      }
 
-        .centered-container {
-            max-width: 640px;
-            margin: auto;
-            text-align: center;
-            padding: 16px;
-            border: 1px solid gray;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-              padding-top: 15px; /* Add padding to ensure content below nav is visible */
+      .centered-container {
+        max-width: 640px;
+        margin: auto;
+        text-align: center;
+        padding: 16px;
+        border: 1px solid gray;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        padding-top: 15px; /* Add padding to ensure content below nav is visible */
+      }
 
-        }
-      
-        .big-title {
-            font-size: 96px; /* You can adjust this value to get the desired size */
-        }
-        .small-title {
-              font-style: italic;
+      .big-title {
+        font-size: 96px; /* You can adjust this value to get the desired size */
+      }
+      .small-title {
+        font-style: italic;
 
-            font-size: 70px; /* You can adjust this value to get the desired size */
-        }
-      
-      
-              nav {
-            width: 100%; /* Full width */
-            position: fixed; /* Fixed position */
-            top: 0; /* Align to the top */
-            left: 0; /* Align to the left */
-            background: black; /* Match the body background color */
-            z-index: 1000; /* Ensure it's above other content */
-        }
+        font-size: 70px; /* You can adjust this value to get the desired size */
+      }
+
+      nav {
+        width: 100%; /* Full width */
+        position: fixed; /* Fixed position */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        background: black; /* Match the body background color */
+        z-index: 1000; /* Ensure it's above other content */
+      }
       /* Targeting links that have not been visited */
-a:link {
-    color: white; /* Sets unvisited links to white */
-}
+      a:link {
+        color: white; /* Sets unvisited links to white */
+      }
 
-/* Targeting links that have been visited */
-a:visited {
-    color: grey; /* Sets visited links to grey */
-}
-
+      /* Targeting links that have been visited */
+      a:visited {
+        color: grey; /* Sets visited links to grey */
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="centered-container">
       <nav>
-                <ul class="flex justify-center space-x-5">
-                  <il><a href="/" class="text-xl impact header-link">Home</a></il>
-                  <il><a href="/issues.html" class="text-xl impact header-link">Issues</a></il>
-                  <il><a href="/bio.html" class="text-xl impact header-link">Bio</a></il>
-                  <il><a href="/#strategy" class="text-xl impact header-link">Strategy</a></il>
-                  <il><a href="/#team" class="text-xl impact header-link">Team</a></il>
-                  <il><a href="/#donate" class="text-xl impact header-link">Donate</a></il>
-                </ul>
-            </nav>
-        <header class="py-4">
-            <h1 class="big-title impact header-link">FINE 2024</h1>
-          
-            <h1 class="small-title impact header-link">the future is fine</h1>
-            
-          <div class="flex justify-center">
-    <div class="bg-black-50 rounded-lg shadow-lg px-4 py-2">
-        <div class="flex flex-col gap-2 items-center justify-between">
-            <span id="countdown" class="text-xl color:red sm:text-sm font-semibold"></span>
-        </div>
+        <ul class="flex justify-center space-x-5">
+          <il><a href="/" class="text-xl impact header-link">Home</a></il>
+          <il
+            ><a href="/issues.html" class="text-xl impact header-link"
+              >Issues</a
+            ></il
+          >
+          <il
+            ><a href="/bio.html" class="text-xl impact header-link">Bio</a></il
+          >
+          <il
+            ><a href="/#strategy" class="text-xl impact header-link"
+              >Strategy</a
+            ></il
+          >
+          <il><a href="/#team" class="text-xl impact header-link">Team</a></il>
+          <il
+            ><a href="/#donate" class="text-xl impact header-link"
+              >Donate</a
+            ></il
+          >
+        </ul>
+      </nav>
+      <header class="py-4">
+        <h1 class="big-title impact header-link">FINE 2024</h1>
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("November 5, 2024 06:00:00").getTime();
+        <h1 class="small-title impact header-link">the future is fine</h1>
 
-            // Update the count down every 1 second
-            var x = setInterval(function() {
+        <div class="flex justify-center">
+          <div class="bg-black-50 rounded-lg shadow-lg px-4 py-2">
+            <div class="flex flex-col gap-2 items-center justify-between">
+              <span
+                id="countdown"
+                class="text-xl color:red sm:text-sm font-semibold"
+              ></span>
+            </div>
 
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date(
+                "November 5, 2024 06:00:00"
+              ).getTime();
+
+              // Update the count down every 1 second
+              var x = setInterval(function () {
                 // Get today's date and time
                 var now = new Date().getTime();
 
@@ -109,101 +122,189 @@ a:visited {
 
                 // Time calculations for days, hours, minutes and seconds
                 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Output the result in an element with id="countdown" 
-                document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds +
-                    " seconds left!";
+                // Output the result in an element with id="countdown"
+                document.getElementById("countdown").innerHTML =
+                  days +
+                  " days, " +
+                  hours +
+                  " hours, " +
+                  minutes +
+                  " minutes, and " +
+                  seconds +
+                  " seconds left!";
 
-                // If the count down is over, write some text 
+                // If the count down is over, write some text
                 if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "LFG!";
+                  clearInterval(x);
+                  document.getElementById("countdown").innerHTML = "LFG!";
                 }
-            }, 1000);
-        </script>
-    </div>
-</div>
-          
-        </header>
+              }, 1000);
+            </script>
+          </div>
+        </div>
+      </header>
+      <div class="retro-divider"></div>
+      <main>
+        <section id="home">
+          <h2 class="text-2xl impact header-link">Welcome to FINE 2024</h2>
+          <p class="mt-2">
+            The FINE 2024 campaign is an independent campaign for President of
+            the United States, not tied to any party. Our candidate, Todd Fine,
+            is an experienced political activist and an expert in American
+            political history and cultural diplomacy. He has been a leader in
+            the desperate fight against the rising forces of fascism in Silicon
+            Valley. Don't panic: the Future is Fine!
+          </p>
+          <p class="mt-2">Sign up here for updates and more information!</p>
+          <form
+            action="https://getform.io/f/paygqvra"
+            method="POST"
+            id="form"
+            class="p-6 flex flex-col justify-center"
+          >
+            <div class="flex flex-col">
+              <label for="name" class="hidden">Full Name</label>
+              <input
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col mt-2">
+              <label for="email" class="hidden">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col mt-2">
+              <label for="tel" class="hidden">Number</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Telephone Number (Optional)"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              />
+            </div>
+            <br />
+            <button
+              type="submit"
+              class="md:w-40 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              Submit!
+            </button>
+          </form>
+          <div id="formClickedMessage" style="color: red; display: none">
+            Thank you for your support!
+          </div>
+
+          <script>
+            const form = document.getElementById("form");
+            form.addEventListener("submit", formSubmit);
+
+            function formSubmit(e) {
+              e.preventDefault();
+              const formData = new FormData(e.target);
+
+              fetch("https://getform.io/f/paygqvra", {
+                method: "POST",
+                body: formData,
+                headers: {
+                  Accept: "application/json",
+                },
+              })
+                .then((response) => console.log(response))
+                .catch((error) => console.log(error));
+
+              document.getElementById("formClickedMessage").style.display =
+                "block";
+              form.style.backgroundColor = "#f3f4f6"; // Change form background color as feedback
+            }
+          </script>
+        </section>
         <div class="retro-divider"></div>
-        <main>
-            <section id="home">
-                <h2 class="text-2xl impact header-link">Welcome to FINE 2024</h2>
-                <p class="mt-2">The FINE 2024 campaign is an independent campaign for President of the United States, not tied to any party. Our candidate, Todd Fine, is an experienced political activist and an expert in American political history, cultural diplomacy, and grand military strategy. He has been a leader in the desperate fight against the rising forces of fascism in Silicon Valley. But don't panic: the Future is Fine!</p>
-              <form action="https://getform.io/f/paygqvra" method="POST" id="form" class="p-6 flex flex-col justify-center">
-                        <div class="flex flex-col">
-                            <label for="name" class="hidden">Full Name</label>
-                            <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-                        </div>
-
-                        <div class="flex flex-col mt-2">
-                            <label for="email" class="hidden">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-                        </div>
-
-                        <div class="flex flex-col mt-2">
-                            <label for="tel" class="hidden">Number</label>
-                            <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-                        </div> <br /> 
-                    <button type="submit" class="md:w-40 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">Submit!</button>
-                    </form>
-                      <div id="formClickedMessage" style="color: red; display: none;">Thank you for your interest!</div>
-
-              <script>
-    const form = document.getElementById("form");
-    form.addEventListener("submit", formSubmit);
-
-    function formSubmit(e) {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-
-        fetch("https://getform.io/f/paygqvra", {
-            method: "POST",
-            body: formData,
-            headers: {
-                "Accept": "application/json",
-            },
-        })
-        .then(response => console.log(response))
-        .catch(error => console.log(error))
-      
-        document.getElementById('formClickedMessage').style.display = 'block';
-        form.style.backgroundColor = '#f3f4f6'; // Change form background color as feedback
-
-    }
-</script>
-              
-            
-          </section>
-            <div class="retro-divider"></div>
-            <section id="issue">
-                <h2 class="text-2xl impact header-link">Our Issues</h2>
-                <p class="mt-2">The FINE 2024 has developed an initial platform we call the <a href="/issues.html">Smart Contract with America</a>. Our first two signature policies are a suspension of crypto taxes pending overall reform of the U.S. tax code and a new initiative called the "AI Dividend." We are also concerned with other major issues including debt, housing, and corruption.</p>
-            </section>
-            <div class="retro-divider"></div>
-            <section id="strategy">
-                <h2 class="text-2xl impact header-link">Our Strategy</h2>
-                <p class="mt-2">We are confident we have an effective strategy to win the presidency. It will begin in the South and move outward! Stay tuned for messages from our campaign manager and political team.</p>
-            </section>
-            <div class="retro-divider"></div>
-            <section id="team">
-                <h2 class="text-2xl impact header-link">Meet the Team</h2>
-                <p class="mt-2">The FINE 2024 is composed of experienced people with expertise in grassroots politics, activism, viral media, online fundraising, and cryptocurrency. Our campaign is led by Campaign Director Delaney Mills and we will also have Directors of Finance, Legal, Policy, Field Organization and Events, Data, Media, and Communications. Contact our Campaign Director at contact@fine2024.org if you are interested in working for the campaign!</p>
-            </section>
-            <div class="retro-divider"></div>
-          <section id="donate">
-                <h2 class="text-2xl impact header-link">Donate Now!</h2>
-                <p class="mt-2">For now, please donate tokens at FINE2024.ETH.</p>
-            </section>
-        </main>
+        <section id="issue">
+          <h2 class="text-2xl impact header-link">Our Issues</h2>
+          <p class="mt-2">
+            The FINE 2024 has developed an initial platform we call the
+            <a href="/issues.html">Smart Contract with America</a>. Our first
+            two signature policies are a suspension of crypto taxes pending
+            overall reform of the U.S. tax code and a new initiative called the
+            "AI Dividend." We are also concerned with other major issues
+            including debt, housing, and corruption.
+          </p>
+        </section>
         <div class="retro-divider"></div>
-        <footer class="py-4">
-            <p>&copy; FINE 2024 Campaign. All rights reserved.</p>
-        </footer>
+        <section id="strategy">
+          <h2 class="text-2xl impact header-link">Our Strategy</h2>
+          <p class="mt-2">
+            We are confident we have an effective strategy to win the
+            presidency. It will begin in the South and move outward! Stay tuned
+            for messages from our campaign manager and political team.
+          </p>
+        </section>
+        <div class="retro-divider"></div>
+        <section id="team">
+          <h2 class="text-2xl impact header-link">Meet the Team</h2>
+          <p class="mt-2">
+            The FINE 2024 is composed of experienced people with expertise in
+            grassroots politics, activism, viral media, online fundraising, and
+            cryptocurrency. Our campaign is led by Campaign Director Delaney
+            Mills and we will also have Directors of Finance, Legal, Policy,
+            Field Organization and Events, Data, Media, and Communications.
+            Contact our Campaign Director at contact@fine2024.org if you are
+            interested in working for the campaign!
+          </p>
+        </section>
+        <div class="retro-divider"></div>
+        <section id="donate">
+          <h2 class="text-2xl impact header-link">Donate Now!</h2>
+          <p
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <script
+              src="https://donorbox.org/widget.js"
+              paypalExpress="false"
+            ></script>
+            <iframe
+              src="https://donorbox.org/embed/fine-2024?language=en"
+              name="donorbox"
+              allowpaymentrequest="allowpaymentrequest"
+              seamless="seamless"
+              frameborder="0"
+              scrolling="no"
+              height="900px"
+              width="100%"
+              style="
+                max-width: 500px;
+                min-width: 250px;
+                max-height: none !important;
+              "
+            ></iframe>
+          </p>
+          <p class="mt-2">Or donate tokens at FINE2024.ETH.</p>
+        </section>
+      </main>
+      <div class="retro-divider"></div>
+      <footer class="py-4">
+        <p>&copy; FINE 2024 Campaign. All rights reserved.</p>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>

@@ -46,6 +46,16 @@
 
         font-size: 70px; /* You can adjust this value to get the desired size */
       }
+      
+      p {
+      a:link {
+          color: red; /* Sets unvisited links to white */
+        }
+      a:visited {
+          color: grey; /* Sets unvisited links to white */
+        }
+      
+      }
 
       nav {
         width: 100%; /* Full width */
@@ -55,40 +65,20 @@
         background: black; /* Match the body background color */
         z-index: 1000; /* Ensure it's above other content */
       }
-      /* Targeting links that have not been visited */
-      a:link {
-        color: white; /* Sets unvisited links to white */
-      }
-
-      /* Targeting links that have been visited */
-      a:visited {
-        color: grey; /* Sets visited links to grey */
-      }
+     
     </style>
   </head>
   <body>
     <div class="centered-container">
       <nav>
-        <ul class="flex justify-center space-x-5">
-          <il><a href="/" class="text-xl impact header-link">Home</a></il>
-          <il
-            ><a href="/issues.html" class="text-xl impact header-link"
-              >Issues</a
-            ></il
-          >
-          <il
-            ><a href="/#strategy" class="text-xl impact header-link"
-              >Strategy</a
-            ></il
-          >
-          <il><a href="/#team" class="text-xl impact header-link">Team</a></il>
-          <il
-            ><a href="/#donate" class="text-xl impact header-link"
-              >Donate</a
-            ></il
-          >
-        </ul>
-      </nav>
+            <ul class="flex justify-center space-x-5">
+                <li><a href="/" class="text-xl impact header-link text-red-500 hover:text-red-700">Home</a></li>
+                <li><a href="/#donate" class="text-xl impact header-link text-red-500 hover:text-red-700">Donate</a></li>
+                <li><a href="/#strategy" class="text-xl impact header-link text-red-500 hover:text-red-700">Strategy</a></li>
+                <li><a href="/#team" class="text-xl impact header-link text-red-500 hover:text-red-700">Team</a></li>
+                <li><a href="/issues.html" class="text-xl impact header-link text-blue-500 hover:text-blue-700">Issues</a></li>
+            </ul>
+        </nav>
       <header class="py-4">
         <h1 class="big-title impact header-link">FINE 2024</h1>
 
@@ -155,7 +145,7 @@
           <p class="mt-2">
             The FINE 2024 campaign is an independent campaign for President of
             the United States, not tied to any party. Our candidate, Todd Fine,
-            is an experienced political activist and an expert in American
+            is an experienced political activist as founder of the <a href="http://washingtonstreet.group">Washington Street Advocacy Group</a> and an expert in American
             political history and cultural diplomacy. He has been a leader in
             the desperate fight against the rising forces of fascism in Silicon
             Valley. Don't panic: the Future is Fine!
@@ -236,6 +226,36 @@
           </script>
         </section>
         <div class="retro-divider"></div>
+        
+        <section id="donate">
+          <h2 class="text-2xl impact header-link">Donate Now!</h2>
+          <p
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <script
+              src="https://donorbox.org/widget.js"
+              paypalExpress="false"
+            ></script>
+            <iframe
+              src="https://donorbox.org/embed/fine-2024?language=en"
+              name="donorbox"
+              allowpaymentrequest="allowpaymentrequest"
+              seamless="seamless"
+              frameborder="0"
+              scrolling="no"
+              height="900px"
+              width="100%"
+              style="
+                max-width: 500px;
+                min-width: 250px;
+                max-height: none !important;
+              "
+            ></iframe>
+          </p>
+          <p class="mt-2">Or donate tokens at FINE2024.ETH.</p>
+        </section>
+              <div class="retro-divider"></div>
+
         <section id="issue">
           <h2 class="text-2xl impact header-link">Our Issues</h2>
           <p class="mt-2">
@@ -270,37 +290,10 @@
           </p>
         </section>
         <div class="retro-divider"></div>
-        <section id="donate">
-          <h2 class="text-2xl impact header-link">Donate Now!</h2>
-          <p
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <script
-              src="https://donorbox.org/widget.js"
-              paypalExpress="false"
-            ></script>
-            <iframe
-              src="https://donorbox.org/embed/fine-2024?language=en"
-              name="donorbox"
-              allowpaymentrequest="allowpaymentrequest"
-              seamless="seamless"
-              frameborder="0"
-              scrolling="no"
-              height="900px"
-              width="100%"
-              style="
-                max-width: 500px;
-                min-width: 250px;
-                max-height: none !important;
-              "
-            ></iframe>
-          </p>
-          <p class="mt-2">Or donate tokens at FINE2024.ETH.</p>
-        </section>
+        
       </main>
-      <div class="retro-divider"></div>
       <footer class="py-4">
-        <p>&copy; FINE 2024 Campaign. All rights reserved.</p>
+        <p>&copy; FINE 2024 Campaign. All rights reserved. Contact: contact@fine2024.org </p>
       </footer>
     </div>
   </body>
